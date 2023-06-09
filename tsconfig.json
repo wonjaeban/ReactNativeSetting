@@ -1,3 +1,67 @@
+// prettier-ignore
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  // "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "target": "es5", // "esnext"
+    "lib": ["dom", "dom.iterable", "ESNext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts).
+    "baseUrl": "./src",
+    "paths": {
+      // "@/*": ["./*"],
+      // "@user/*": ["./features/user/*"],
+      // "@interview/*": ["./features/interview/*"],
+      // "@essay/*": ["./features/essay/*"],
+      // "react-native-picker-select": ["../@types/react-native-picker-select"]
+      // "@utils/*": ["utils/*"]
+    }
+
+    // "forceConsistentCasingInFileNames": true,
+    // "traceResolution": true,
+    // "downlevelIteration": true
+
+    // testing
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true
+    // "module": "esnext",
+    // "importHelpers": true,
+    // "noImplicitAny": false,
+    // "sourceMap": true
+    // "noFallthroughCasesInSwitch": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    // "noImplicitThis": true
+    // "strictPropertyInitialization": true,
+    // "alwaysStrict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noImplicitReturns": true
+  },
+  // "files": ["environment.d.ts"],
+  // "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  // "exclude": [
+  //   "node_modules",
+  //   "**/*.test.tsx",
+  //   "**/*.spec.ts",
+  //   "babel.config.js",
+  //   "metro.config.js",
+  //   "jest.config.js"
+  // ],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    }
+  }
 }
